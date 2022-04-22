@@ -1,7 +1,11 @@
 {
   "version": 2,
   "projects": {
+    "contexts": "libs/contexts",
+    "models": "libs/models",
+    "storage": "libs/storage",
     "todo-list": "apps/todo-list",
-    "todo-list-e2e": "apps/todo-list-e2e"
+    "todo-list-e2e": "apps/todo-list-e2e",
+    "ui": "libs/ui"
   }
 }

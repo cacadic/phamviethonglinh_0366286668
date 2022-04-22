@@ -10,11 +10,18 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": ["es2017", "dom"],
+    "lib": ["es6", "esnext", "dom", "dom.iterable"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@components/*": ["apps/portal/components/*"],
+      "@public/*": ["apps/todo-list/public/*"],
+      "@sotatek/contexts": ["libs/contexts/src/index.ts"],
+      "@sotatek/models": ["libs/models/src/index.ts"],
+      "@sotatek/storage": ["libs/storage/src/index.ts"],
+      "@sotatek/ui": ["libs/ui/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

@@ -1,0 +1,23 @@
+{
+  "root": "libs/storage",
+  "sourceRoot": "libs/storage/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/storage/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/storage"],
+      "options": {
+        "jestConfig": "libs/storage/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

@@ -3,23 +3,36 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "nx serve",
+    "start": "NODE_ENV=development env-cmd -f .env.dev nx serve todo-list --port 3000 --trace-warnings --verbose",
     "build": "nx build",
     "test": "nx test"
   },
   "private": true,
   "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
     "@nrwl/next": "14.0.1",
+    "antd": "^4.19.5",
     "core-js": "^3.6.5",
+    "env-cmd": "^10.1.0",
     "next": "12.1.5",
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-is": "18.0.0",
     "regenerator-runtime": "0.13.7",
+    "simplebar-react": "^2.3.7",
     "styled-components": "5.3.5",
-    "tslib": "^2.3.0"
+    "tailwindcss": "^3.0.24",
+    "tslib": "^2.3.0",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/preset-typescript": "^7.16.7",
+    "@emotion/babel-plugin": "^11.9.2",
     "@nrwl/cli": "14.0.1",
     "@nrwl/cypress": "14.0.1",
     "@nrwl/eslint-plugin-nx": "14.0.1",

@@ -1,0 +1,23 @@
+{
+  "root": "libs/contexts",
+  "sourceRoot": "libs/contexts/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/contexts/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/contexts"],
+      "options": {
+        "jestConfig": "libs/contexts/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  }
+}
