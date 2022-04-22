@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "todo-list": "apps/todo-list",
+    "todo-list-e2e": "apps/todo-list-e2e"
+  }
+}
