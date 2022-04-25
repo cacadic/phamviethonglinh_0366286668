@@ -60,7 +60,8 @@ const ToDoList = () => {
 
   useEffect(() => {
     setIsShowBulk(
-      listToDo.filter((todo) => todo.isChecked === true).length > 0
+      listToDo?.length > 0 &&
+        listToDo.filter((todo) => todo.isChecked === true).length > 0
     );
     setShowList(listToDo);
     setSearchKeyword('');
